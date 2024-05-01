@@ -1,0 +1,45 @@
+/* Common styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    max-width: 80%; /* Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    border-radius: 25px;
+    width: 70px;
+}
+
+#noButton {
+    position: relative;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Adjust container width for smaller screens */
+    }
+}
+
+/* Additional styles for larger screens */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 70%; /* Adjust container width for larger screens */
+    }
+}
