@@ -30,7 +30,7 @@ document.getElementById("noButton").addEventListener("click", function(event) {
 let noButton = document.getElementById("noButton");
 
 // Add event listener for the "No" button mouseover
-noButton.addEventListener("mouseover", function() {
+noButton.addEventListener("touchstart", function() {
     // Hide the button
     this.style.display = "none";
     // Calculate random position within viewport
